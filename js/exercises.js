@@ -31,9 +31,7 @@ function maxOfThree(num1, num2, num3) {
   // ---------------------
 
 isVowel('a')
- if ('a' == 'A' or 'E' or 'I' or 'O' or 'U') {
-  return true;
- } else {return false;}
+ if ('a' == 'A' or 'E' or 'I' or 'O' or 'U'){return true;} else {return false;}
 
 
   // ---------------------
