@@ -4,9 +4,9 @@
   // ---------------------
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
-function max(num1, num2) {
-  if(num1>num2) {
-    return num1;
+function max(num1, num2) { //num1/2: arguments, could be data, etc
+  if(num1>num2) { //if num1 is greater than num2, returns num1. 
+    return num1; //if num2 is greater than num1, returns num2. 
   } else {num2
   }
 }
@@ -16,12 +16,12 @@ function max(num1, num2) {
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
-function maxOfThree(num1, num2, num3) {
-  if (num1 > num2 && num1 > num3) {
+function maxOfThree(num1, num2, num3) { //num1-3 are arguments 
+  if (num1 > num2 && num1 > num3) { //function uses greater than and && statement to compare arguments
     return num1;
   } else if 
     (num2 > num1 && num2 > num3) 
-    {return num2;} else if (num3 > num1 && num3 > num2) {
+    {return num2;} else if (num3 > num1 && num3 > num2) { //largest of three numbers should be output
       return num3;
     }}
   
@@ -31,22 +31,24 @@ function maxOfThree(num1, num2, num3) {
   // ---------------------
 
 isVowel('a')
- if ('a' == 'A' or 'E' or 'I' or 'O' or 'U'){return true;} else {return false;}
+ if ('a' == 'A' or 'E' or 'I' or 'O' or 'U') //attempted to chain or statement
+ {return true;} else {return false;} //if else statement to return true if vowel is inputed
 
 
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
 
-rovarspraket()
+  function rovarspraket() // ????
 
 
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
-  const num = [1,2,3,4]
-  function sum(num)
-    for(let i = 0; i++) 
+  const num = [1,2,3,4] //I think this needs to be iterated through an Array w/ a for loop to solve
+  function sum(num) // but I am having a really difficult time understanding what each part means individually and together
+    for(let i = 0; i++) //using freecodecamp: Iterate Through an Array with a For Loop as reference 
+
 
  
 
@@ -55,25 +57,25 @@ rovarspraket()
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
-
+//will continue to attempt to solve 
 
 
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
-
+//will continue to attempt to solve 
 
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
-
+//will continue to attempt to solve 
 
 
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
-
+//will continue to attempt to solve 
 
   ////////////////////////////////////////////////////////////////////////
   /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////

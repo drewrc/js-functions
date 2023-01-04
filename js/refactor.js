@@ -34,7 +34,8 @@ function doSomethingCool() {
 // Put your answer below -------------------------
 
 
-// -----------------------------------------------
+// const doSomethingCool = () => //arrow is a. function
+// console.log("Something Cool!"); //what result would be 
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -54,7 +55,8 @@ setTimeout(sayHi, 2000);
 // Put your answer below -------------------------
 
 
-// -----------------------------------------------
+// const sayHi = () => "Hello, World!" //new function
+//return alert; //not sure if this would stay the same as original or be rewritten this way?
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -84,7 +86,7 @@ console.log("The letter is", letter);
 // Put your answer below -------------------------
 
 
-// -----------------------------------------------
+// not sure?
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -107,7 +109,7 @@ var reverseStr = function(str) {
 
 
 
-// -----------------------------------------------
+// str => (const reverseStr = [[split, ""], [reverse, ""], [join, ""]];) //I don't think this one is on the mark :'D
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
