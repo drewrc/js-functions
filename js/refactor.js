@@ -55,8 +55,8 @@ setTimeout(sayHi, 2000);
 // Put your answer below -------------------------
 
 
-// const sayHi = () => "Hello, World!" //new function
-//return alert; //not sure if this would stay the same as original or be rewritten this way?
+// const sayHi = () => alert ("Hello, World!"); //new function; function sayHi is redefined as a varible and a fat arrow is added that indicates anonymous function that displays the alert message
+// setTimeout(sayHi, 2000);  //calls function after 2s
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -86,7 +86,7 @@ console.log("The letter is", letter);
 // Put your answer below -------------------------
 
 
-// not sure?
+// c. z then y // the second console.log is executed first 
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -108,8 +108,9 @@ var reverseStr = function(str) {
 // Put your answer below -------------------------
 
 
+//const reverseStr = (str) => arr.split("").reverse().join(""); // used array() reverse method, but not sure why it's console.log undefined 
 
-// str => (const reverseStr = [[split, ""], [reverse, ""], [join, ""]];) //I don't think this one is on the mark :'D
+
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -140,6 +141,19 @@ var spanishColor = function(colorName) {
   }
 };
 
+// function getColorName(colorName) { //name of function/function start
+//var spanishColor = {  //use variable above to name object
+//"rojo": "#ff0000",  //object start
+//"blanco": "#ffffff",
+//"azul": "#0000ff",
+//"verde": "#00ff00",
+//"negro": "#000000", //object end 
+//};  //end of function
+//return spanishColor[colorName.toLowerCase()]; //return value of var spanishColor
+//};
+//getColorName(); //call function (optional to stop VS code from getting upset)
+
+
 // Put your answer below -------------------------
 
 
@@ -159,6 +173,9 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
+
+//var foo; //declare variable 
+//foo = "bar"; //assignment (assign value to variable) 
 
 
 // -----------------------------------------------
