@@ -27,15 +27,23 @@
 // to a variable containing an anonymous
 // function
 
+
 function doSomethingCool() {
   console.log("Something Cool!");
 }
 
 // Put your answer below -------------------------
 
+// const doSomethingCool = () => {//arrow is a. function
+// console.log("Something Cool!");//what result would be 
+// }
 
-// const doSomethingCool = () => //arrow is a. function
-// console.log("Something Cool!"); //what result would be 
+const doSomethingCool = function () {
+  console.log("Something Cool");
+};
+
+console.log(doSomethingCool())
+
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -55,8 +63,13 @@ setTimeout(sayHi, 2000);
 // Put your answer below -------------------------
 
 
-// const sayHi = () => alert ("Hello, World!"); //new function; function sayHi is redefined as a varible and a fat arrow is added that indicates anonymous function that displays the alert message
-// setTimeout(sayHi, 2000);  //calls function after 2s
+//const sayHi = () => {alert ("Hello, World!"); //new function; function sayHi is redefined as a varible and a fat arrow is added that indicates anonymous function that displays the alert message
+ //setTimeout(sayHi, 2000);  //calls function after 2s
+
+const sayHi = function () {alert ("Hello, World!")};
+  setTimeout(sayHi, 2000);
+
+// console.log(sayHi()) //not sure if needed?
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -85,8 +98,7 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
-
-// c. z then y // the second console.log is executed first 
+// c. z then y // the second console.log is executed first and var letter is never executed
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -105,12 +117,12 @@ var reverseStr = function(str) {
   return str;
 };
 
+
 // Put your answer below -------------------------
 
+const reverseStr = (str) => str.split("").reverse().join("");
 
-//const reverseStr = (str) => arr.split("").reverse().join(""); // used array() reverse method, but not sure why it's console.log undefined 
-
-
+reverseStr("hello");
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -141,24 +153,24 @@ var spanishColor = function(colorName) {
   }
 };
 
-// function getColorName(colorName) { //name of function/function start
-//var spanishColor = {  //use variable above to name object
-//"rojo": "#ff0000",  //object start
-//"blanco": "#ffffff",
-//"azul": "#0000ff",
-//"verde": "#00ff00",
-//"negro": "#000000", //object end 
-//};  //end of function
-//return spanishColor[colorName.toLowerCase()]; //return value of var spanishColor
-//};
-//getColorName(); //call function (optional to stop VS code from getting upset)
-
 
 // Put your answer below -------------------------
 
+function getColorName(colorName) { //name of function/function start
+    var spanishColor = {  //use variable above to name object
+    "rojo": "#ff0000",  //object start
+    "blanco": "#ffffff",
+    "azul": "#0000ff",
+    "verde": "#00ff00",
+    "negro": "#000000", //object end 
+    };  //end of function
+    return spanishColor[colorName.toLowerCase()]; //return value of var spanishColor
+  };
+ 
+  console.log(getColorName('rojo'))
 
 
-// -----------------------------------------------
+//  -----------------------------------------------
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -174,9 +186,9 @@ var foo = "bar";
 
 // Put your answer below -------------------------
 
-//var foo; //declare variable 
-//foo = "bar"; //assignment (assign value to variable) 
-
+var foo; //declare variable 
+foo = "bar"; //assignment (assign value to variable) 
+console.log(foo)
 
 // -----------------------------------------------
 
@@ -200,6 +212,13 @@ var callTenTimes = function(callback) {
 // callTenTime(functionName);
 
 // Put your answer below -------------------------
+
+var calllNTimes = function(n) {
+  var range = Array.from(Array(n).keys());
+  range.forEach(callback);
+};
+calllNTimes(9)
+
 
 
 // -----------------------------------------------
@@ -229,6 +248,15 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+const score = 0;
+
+const increaseScore = function() {
+  score++;
+};
+
+const decreaseScore = function() {
+  score--;
+};
 
 
 // -----------------------------------------------
@@ -249,6 +277,16 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+
+
+//????????????????//
+
+var addNumbers = function(numberA, numberB) {
+  return numberA + numberB;
+};
+
+var twoPlusTwo = addNumbers(2,2);
+
 
 
 
@@ -275,8 +313,17 @@ var accelerate = function(amount) {
   speed += amount;
 };
 
+
 // Put your answer below -------------------------
 
+//if parameter 'amount' is undefined and var speed is '0' 0 + 'undefined' is NaN
+
+var speed = 0;
+
+var accelerate = function (amount = 1) {
+  speed += amount;
+  console.log(amount)
+};
 
 
 // -----------------------------------------------
