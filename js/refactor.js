@@ -28,9 +28,9 @@
 // function
 
 
-function doSomethingCool() {
-  console.log("Something Cool!");
-}
+// function doSomethingCool() {
+//   console.log("Something Cool!");
+// }
 
 // Put your answer below -------------------------
 
@@ -54,11 +54,11 @@ console.log(doSomethingCool())
 // after 2 seconds. Refactor to use an anonymous
 // function
 
-function sayHi() {
-  alert("Hello, World!");
-}
+// function sayHi() {
+//   alert("Hello, World!");
+// }
 
-setTimeout(sayHi, 2000);
+// setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
@@ -109,13 +109,13 @@ console.log("The letter is", letter);
 // of the function is 5 lines of code. Refactor
 // this function to do the same thing with 1 line
 
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};
+// var reverseStr = function(str) {
+//   var arr;
+//   arr = str.split("");
+//   arr = arr.reverse();
+//   str = arr.join("");
+//   return str;
+// };
 
 
 // Put your answer below -------------------------
@@ -213,11 +213,16 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
-var calllNTimes = function(n) {
+var calllNTimes = function(callback,n) {
   var range = Array.from(Array(n).keys());
   range.forEach(callback);
 };
-calllNTimes(9)
+
+function functionName() {
+  
+}
+
+calllNTimes(functionName, 9);
 
 
 
@@ -236,15 +241,15 @@ calllNTimes(9)
 
 // HINT: "global scope"
 
-var score = 0;
+// var score = 0;
 
-var increaseScore = function() {
-  score++;
-};
+// var increaseScore = function() {
+//   score++;
+// };
 
-var decreaseScore = function() {
-  score--;
-};
+// var decreaseScore = function() {
+//   score--;
+// };
 
 // Put your answer below -------------------------
 
